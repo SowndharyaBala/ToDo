@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="ISO-8859-1">
+    <title>To-do List</title>
+     <link rel="stylesheet" type="text/css" href="todolist.css">
+</head>
+<body>
+    <h1>To-do List</h1>
+    <form action="saveTodo.jsp" method="post">
+        <table>
+            <tr>
+                <th><label for="title">Title: </label></th>
+                <td><input type="text" name="title" id="title" required></td>
+            </tr>
+            <tr>
+                <th><label for="description">Description: </label></th>
+                <td><textarea name="description" id="description" rows="4" cols="30" required></textarea></td>
+            </tr>
+        </table>
+        <button type="submit">Submit</button>
+    </form>
+</body>
+</html>
